@@ -73,9 +73,32 @@ $(document).ready(function(){
 });
 
 // GSAP page animations
-// gsap.from('.main__container__logo__img', { opacity: 0, duration: 1, y: -50 });
-// gsap.from('.main__container__titles__buttons', { opacity: 0, duration: 2 });
+gsap.registerPlugin(ScrollTrigger);
 
-var tl = gsap.timeline({ defaults: {duration: 1}});
-tl.from(".main__container__logo__img", {y: -50, opacity: 0})
-  .to();
+// About
+gsap.from(".about__info__personal__profile", {
+  scrollTrigger: ".about__info__personal__profile",
+  y: -50,
+  opacity: 0,
+  duration: 1.75
+});
+gsap.from(".about__info__personal__text__header", {
+  scrollTrigger: ".about__info__personal__text__header",
+  y: 25,
+  opacity: 0,
+  duration: 1
+});
+gsap.from(".about__info__personal__text__paragraph", {
+  scrollTrigger: ".about__info__personal__text__paragraph",
+  y: 35,
+  opacity: 0,
+  duration: 1.25
+});
+
+gsap.from(".card", {
+  scrollTrigger: ".card",
+  y: 50,
+  opacity: 0,
+  duration: .75,
+  stagger: .4
+});

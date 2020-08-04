@@ -15,12 +15,13 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js" defer></script>
     <script src="script.js" defer></script>
     <title>Stefano Metafuni | Front-End Web Developer</title>
   </head>
   <body>
     <!-- Loading Overlay -->
-    <!-- <span class="loading__overlay">
+    <span class="loading__overlay">
       <div class="loading__overlay__item blue"></div>
       <div class="loading__overlay__item lightblue"></div>
       <div class="loading__overlay__item grey"></div>
@@ -30,7 +31,7 @@
           Stefano Metafuni
         </h3>
       </div>
-    </span> -->
+    </span>
 
     <!-- Navbar -->
     <nav class="navbar">
@@ -132,21 +133,22 @@
                 src="./img/stefano.jpeg"
                 alt="Stefano Metafuni Linkedin Profile Picture"
                 class="about__info__personal__profile__linkedin__img"
+                id="gsap-img"
               />
               <i class="fab fa-linkedin fa-2x"></i>
             </a>
           </div>
           <div class="about__info__personal__text">
-            <h3>Hi there,</h3>
+            <h3 class="about__info__personal__text__header">Hi there,</h3>
             <br />
-            <p>
+            <p class="about__info__personal__text__paragraph">
               I am a Freelance Front-End Web Developer based in Dundee
               (Scotland), United Kingdom. I'm passionate about digital
               technologies and creating elegant, intuitive and business-focused
               websites with a modern feel.
             </p>
             <br />
-            <p>
+            <p class="about__info__personal__text__paragraph">
               After having graduated from the
               <a
                 href="https://www.universiteitleiden.nl/en"
@@ -161,7 +163,7 @@
               and a strong customer experience.
             </p>
             <br />
-            <p>
+            <p class="about__info__personal__text__paragraph">
               As a Freelance Web Developer for my clients, I focus on the three
               most important aspects of online presence: sleek
               <span class="bold">Design</span>, solid functionality through
