@@ -1,0 +1,155 @@
+.about {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  padding: 5rem 2.5rem;
+  background: linear-gradient(125deg, $backgroundwhite, #f5f7fb, 50%, $white 50%);
+
+  .fa-cogs {
+    color: #f5f7fb;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+  }
+
+  //Info
+  &__info {
+    background: $blue;
+    color: $backgroundwhite;
+    padding: 5rem 2.5rem;
+
+    &__personal {
+      display: flex;
+      padding: 3rem 2.5rem;
+
+      &__profile {
+        width: 30%;
+        text-align: center;
+
+        &__linkedin {
+          text-decoration: none;
+          outline: none;
+          color: $backgroundgrey;
+          transition: 0.3s;
+          position: relative;
+
+          &__img {
+            width: 80%;
+            max-width: 250px;
+            border-radius: 30%;
+            transition: 0.5s;
+            filter: grayscale(100%);
+          }
+
+          &:hover {
+            color: $faintwhite;
+
+            img {
+              filter: blur(1px) grayscale(100%);
+              box-shadow: 1px 1px 1px $backgroundblue,
+                -1px -1px 1px $backgroundblue, 
+                -1px 1px 1px $backgroundblue,
+                1px -1px 1px $backgroundblue;
+            }
+          }
+
+          .fa-linkedin {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+        }
+      }
+
+      &__text {
+        width: 70%;
+        padding: 2.5rem;
+
+        h3 {
+          color: $white;
+          margin: 0 0 0.5rem 1rem;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+    &__service {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem 2.5rem;
+
+      .card {
+        text-align: center;
+
+        hr {
+          width: 10rem;
+          background: $faintwhite;
+          border-radius: 15px;
+          opacity: 0.2;
+          margin: 1.5rem auto;
+        }
+
+        p {
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+
+  //Techgrid
+  &__techgrid {
+    max-width: 420px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-gap: 1px;
+    justify-items: center;
+    align-items: center;
+    margin: 2rem auto;
+
+    a {
+      height: 100%;
+
+      .about__techgrid__item {
+        display: flex;
+        background: $white;
+        height: 100%;
+        padding: 0.75rem;
+        box-shadow: 1px 1px 10px $grey;
+        transition: 0.5s;
+
+        &:hover {
+          box-shadow: 1px 1px 7px $faintblue, -1px -1px 7px $faintblue,
+            -1px 1px 7px $faintblue, 1px -1px 7px $faintblue;
+
+          .about__techgrid__item__img {
+            transform: rotate3d(0, 1, 0, 360deg);
+          }
+        }
+
+        &__img {
+          width: 80%;
+          max-height: 60px;
+          margin: 0 auto;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+
+  &__technologies {
+    width: 50vw;
+    margin: 0 auto;
+    color: $grey;
+    text-align: center;
+    padding: 2.5rem;
+
+    h3 {
+      color: $blue;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

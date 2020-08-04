@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./img/logos/logo.svg" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&family=Ubuntu:wght@500&display=swap&family=Raleway:wght@300&display=swap&family=IBM+Plex+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b18cc11501.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Stefano Metafuni | Front-End Web Developer</title>
+  </head>
+  <body>
+    <!-- Loading Overlay -->
+    <!-- <span class="loading__overlay">
+      <div class="loading__overlay__item blue"></div>
+      <div class="loading__overlay__item lightblue"></div>
+      <div class="loading__overlay__item grey"></div>
+      <div class="loading__overlay__img">
+        <img src="./img/logos/logo.svg" alt="" />
+        <h3>
+          Stefano Metafuni
+        </h3>
+      </div>
+    </span> -->
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#main">
+        <img
+          class="navbar__logo"
+          src="./img/logos/logo.svg"
+          alt="Stefano Metafuni Front End Developer Logo"
+        />
+      </a>
+
+      <h1 class="navbar__hovertext">
+        <a href="#main">Stefano Metafuni</a>
+      </h1>
+
+      <div class="navbar__animated">
+        <div class="navbar__animated__line blue"></div>
+        <div class="navbar__animated__line grey"></div>
+        <div class="navbar__animated__line lightblue"></div>
+      </div>
+
+      <div class="navbar__burger">
+        <div class="line line--top"></div>
+        <div class="line line--mid"></div>
+        <div class="line line--bottom"></div>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item">
+          <a class="navbar__link" href="#main">home</a>
+        </li>
+        <li class="navbar__menu__item">
+          <a class="navbar__link" href="#about">about</a>
+        </li>
+        <li class="navbar__menu__item">
+          <a class="navbar__link" href="#projects">projects</a>
+        </li>
+        <!-- <li class="navbar__menu__item">
+          <a class="navbar__link" href="#experience">experience</a>
+        </li> -->
+        <li class="navbar__menu__item">
+          <a class="navbar__link" href="#contact">contact</a>
+        </li>
+        <li class="navbar__menu__item">
+          <a class="btn btn__nav button" href="/cv.pdf" target="_blank">
+            <i class="fas fa-file-download"></i>
+            <i class="fas fa-file"></i>
+            cv
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main/Hero Section -->
+    <div class="wrapper">
+      <section class="main" id="main">
+        <div class="main__container">
+          <div class="main__container__titles">
+            <h1>Stefano Metafuni</h1>
+            <hr />
+            <h2>Front-End Web Developer</h2>
+            <div class="main__container__titles__buttons">
+              <a class="button" href="#projects">
+                <div class="button__container">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-project-diagram"></i>
+                </div>
+                Projects
+              </a>
+              <a class="button" href="#contact">
+                <div class="button__container">
+                  <i class="fas fa-angle-double-down"></i>
+                  <i class="far fa-envelope"></i>
+                </div>
+                Contact
+              </a>
+            </div>
+          </div>
+          <div class="main__container__logo">
+            <div class="main__container__logo__overlay">
+              <img
+                src="./img/logos/logo.svg"
+                alt=""
+                class="main__container__logo__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about__info" id="about">
+        <div class="about__info__personal">
+          <div class="about__info__personal__profile">
+            <a
+              href="https://www.linkedin.com/in/stefano-metafuni-018336183"
+              class="about__info__personal__profile__linkedin"
+            >
+              <img
+                src="./img/stefano.jpeg"
+                alt="Stefano Metafuni Linkedin Profile Picture"
+                class="about__info__personal__profile__linkedin__img"
+              />
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </div>
+          <div class="about__info__personal__text">
+            <h3>Hi there,</h3>
+            <br />
+            <p>
+              I am a Freelance Front-End Web Developer based in Dundee
+              (Scotland), United Kingdom. I'm passionate about digital
+              technologies and creating elegant, intuitive and business-focused
+              websites with a modern feel.
+            </p>
+            <br />
+            <p>
+              After having graduated from the
+              <a
+                href="https://www.universiteitleiden.nl/en"
+                target="_blank"
+                class="link"
+                >Leiden University</a
+              >
+              in the field of Astronomy, and Science/Physics education, I have
+              worked internationally in sales, technical support and e-commerce
+              for multinational businesses. These experiences allow me to
+              develop efficient and professional projects, with a business focus
+              and a strong customer experience.
+            </p>
+            <br />
+            <p>
+              As a Freelance Web Developer for my clients, I focus on the three
+              most important aspects of online presence: sleek
+              <span class="bold">Design</span>, solid functionality through
+              efficient <span class="bold">Code</span> and
+              <span class="bold">Optimisation</span> of digital content and web
+              performance.
+            </p>
+          </div>
+        </div>
+        <div class="about__info__service">
+          <div class="about__info__service__design card">
+            <i class="fas fa-edit fa-4x"></i>
+            <hr />
+            <h4>Design</h4>
+            <br />
+            <p>
+              Following the latest design trends in web design and user
+              interfaces, I use tools like
+              <a href="https://www.figma.com/" target="_blank" class="link"
+                >Figma</a
+              >
+              and
+              <a href="https://inkscape.org/" target="_blank" class="link"
+                >Inkscape</a
+              >
+              to create svg logos, website mockups and wireframes.
+            </p>
+          </div>
+          <div class="about__info__service__code card">
+            <i class="fas fa-laptop-code fa-4x"></i>
+            <hr />
+            <h4>Code</h4>
+            <br />
+            <p>
+              Creating clean, efficient and reusable code is at the core of the
+              web development I create. My main motto is the
+              <i>DRY</i> principle:
+              <i>Don't Repeat Yourself.</i>
+            </p>
+          </div>
+          <div class="about__info__service__optimisation card">
+            <i class="fas fa-chart-line fa-4x"></i>
+            <hr />
+            <h4>Optimise</h4>
+            <br />
+            <p>
+              Using tools like
+              <a href="https://www.deque.com/" target="_blank" class="link"
+                >Axe</a
+              >
+              and the Chrome Browser
+              <a
+                href="https://developers.google.com/web/tools/chrome-devtools"
+                target="_blank"
+                class="link"
+                >DevTools</a
+              >
+              to optimise page performance, and
+              <a href="" target="_blank" class="link">Ahrefs</a> and
+              <a
+                href="https://analytics.google.com/"
+                target="_blank"
+                class="link"
+                >Google Analytics</a
+              >
+              for SEO, my projects are optimised for performance and organic
+              traffic on all devices.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <!-- Technologies Grid -->
+        <div class="about__techgrid">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+          >
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/html5.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a href="https://css-tricks.com/" target="_blank">
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/css3.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a href="https://sass-lang.com/" target="_blank">
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/sass.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a href="https://getbootstrap.com/" target="_blank">
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/bootstrap.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a href="http://getbem.com/" target="_blank">
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/bem.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a href="https://materializecss.com/" target="_blank">
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/materialize.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+          >
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/javascript.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a href="https://reactjs.org/" target="_blank">
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/react.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a href="https://www.gatsbyjs.org/" target="_blank">
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/gatsby.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a href="https://jquery.com/" target="_blank">
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/jquery.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a href="https://graphql.org/" target="_blank">
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/graphql.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a href="https://greensock.com/gsap/" target="_blank">
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/gsap.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a href="https://git-scm.com/" target="_blank">
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/git.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a href="https://www.figma.com/" target="_blank">
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/figma.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+          <div class="about__techgrid__item--empty"></div>
+          <a href="https://github.com/" target="_blank">
+            <div class="about__techgrid__item">
+              <img
+                src="./img/logos/web-dev/github-icon.svg"
+                alt=""
+                class="about__techgrid__item__img"
+              />
+            </div>
+          </a>
+        </div>
+
+        <div class="about__technologies">
+          <h3>Technologies</h3>
+          <p>
+            These are a few of the technologies that I have been working with
+            lately, and depending on what the project requires, I choose
+            whichever is the most applicable and suits best. I am flexible and
+            open minded when it comes to learning and using new technologies, as
+            it only enhances my capabilities as a developer.
+          </p>
+          <br />
+          <p>
+            Examples of the resources that I use to learn, and stay up to date
+            with the latest technologies and trends, are the
+            <a
+              href="https://developer.mozilla.org/en-US/"
+              target="_blank"
+              class="white-link"
+              >MDN web docs</a
+            >
+            documentation,
+            <a
+              href="https://www.freecodecamp.org/"
+              target="_blank"
+              class="white-link"
+              >FreeCodeCamp</a
+            >
+            for JavaScript exercises and algorithms and the many Youtube
+            channels of developers for the latest trends in web.
+          </p>
+        </div>
+        <i class="fas fa-cogs fa-10x"></i>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects" id="projects">
+        <div class="projects__intro">
+          <div class="projects__intro__text">
+            <h3>Projects</h3>
+            <p>
+              Below are a few of my professional and hobby projects, including
+              links to the live projects and the Github repositories. All
+              projects are fully responsive for mobile, tablet, laptop or bigger
+              screen sizes.
+            </p>
+          </div>
+
+          <div class="projects__intro__screens">
+            <img
+              src="./img/responsive-mobile-design.png"
+              alt=""
+              class="projects__intro__screens__img--mobile"
+            />
+            <img
+              src="./img/desktop-design.png"
+              alt=""
+              class="projects__intro__screens__img--desktop"
+            />
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <a
+            href="https://examplegeography.netlify.app/"
+            target="_blank"
+            class="projects__project__img"
+          >
+            <img
+              src="https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5ef8b6060942e26842d68c5f/screenshot.png"
+              alt=""
+            />
+          </a>
+          <div class="projects__project__info">
+            <h4>Geography Now! e-learn Application</h4>
+            <p>
+              A tribute e-learn application for the
+              <a
+                href="https://www.youtube.com/user/GeographyNow"
+                target="_blank"
+                class="white-link"
+                >Geography Now!</a
+              >
+              Youtube channel. The application is aimed for people wanting to
+              explore the world and improve their geography knowledge, but can
+              certainly be used at high school in geography classes as a fun
+              intermezzo. The user can use the three functionalities of the app:
+              <i>Explore, GeoMap</i> and the <i>Quiz</i>. <br /><br />In
+              <i>Explore</i> the user can look up any country of the world and
+              learn about the local languages, the location in the world,
+              currency used and the living standards of the capital cities.
+              <br /><br />
+              The <i>GeoMap</i> is a map of the world with all the capital
+              cities marked. Clicking on the capital cities it will pop up the
+              Geography Now! episode of the country. <br /><br />
+              The user can test its geography knowledge by playing the
+              <i>Quiz</i>. The goal of the quiz is to guess all the countries of
+              the world within the time limit.
+            </p>
+            <ul class="projects__project__info__code">
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>SCSS</li>
+              <li>Mapbox API</li>
+            </ul>
+            <div class="projects__project__info__buttons">
+              <a
+                class="button"
+                href="https://github.com/metafuni/react_geography-now"
+                target="_blank"
+              >
+                <div class="button__container">
+                  <i class="fas fa-angle-right"></i>
+                  <i class="fab fa-github"></i>
+                </div>
+              </a>
+              <a
+                class="button"
+                href="https://geography-now-app.netlify.app/"
+                target="_blank"
+              >
+                <div class="button__container">
+                  <i class="fas fa-angle-double-right"></i>
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+              </a>
+            </div>
+
+            <!-- Accordion more info -->
+            <!-- <button class="projects__project__accordion">
+              <span class="projects__project__accordion__text">more info</span
+              ><i class="fas fa-angle-down"></i>
+            </button>
+            <p class="projects__project__panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              quisquam distinctio, consectetur impedit quas itaque dolores quod
+              sint suscipit sapiente blanditiis eveniet debitis inventore iste
+              animi natus voluptatibus id sit ipsa obcaecati quibusdam error in
+              dignissimos numquam! Tenetur expedita ad minus culpa eveniet
+              repudiandae, labore nobis fuga illo alias, id non harum qui? Esse
+              velit delectus perferendis, consequatur a sit quod exercitationem
+              quos blanditiis cupiditate earum, nisi molestiae nostrum iusto
+              sed, voluptatem numquam eligendi at quam qui! Totam veritatis ea
+              dolore modi ut fugiat accusamus, iusto voluptates asperiores
+              quisquam libero debitis itaque voluptatem alias est necessitatibus
+              adipisci? Illo veritatis in odit modi hic itaque. Ipsam quia fugit
+              laborum, doloribus deleniti provident nobis, officia eligendi
+              repellat id quo ab laboriosam rem at, culpa magni voluptatum ipsa
+              molestiae? Sapiente maxime repellat quos quod ut non incidunt, rem
+              totam ab! Repellendus dicta doloribus perferendis in numquam
+              praesentium. Voluptatem nihil fugit quibusdam in quam!
+            </p> -->
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <a
+            href="https://react-tmdb-application.netlify.app/"
+            target="_blank"
+            class="projects__project__img"
+          >
+            <img
+              src="https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5ef72d00cc2203c19c9614a2/screenshot.png"
+              alt=""
+            />
+          </a>
+          <div class="projects__project__info">
+            <h4>The Movie Database (TMDb) movie search application</h4>
+            <p>
+              A movie database application to look up your favourite movies and
+              documentaries. The React application uses the
+              <a
+                href="https://www.themoviedb.org/"
+                target="_blank"
+                class="white-link"
+                >TMDb</a
+              >
+              API to fetch the data and movie posters, and the Youtube API to
+              fetch the trailer for the movie. The autosuggest in the search
+              field is done using the easy to use React
+              <a
+                href="http://react-autosuggest.js.org/"
+                target="_blank"
+                class="white-link"
+                >Autosuggest</a
+              >
+              component.
+            </p>
+            <ul class="projects__project__info__code">
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>SCSS</li>
+              <li>Youtube API</li>
+            </ul>
+            <div class="projects__project__info__buttons">
+              <a
+                class="button"
+                href="https://github.com/metafuni/react_tmdb-application"
+                target="_blank"
+              >
+                <div class="button__container">
+                  <i class="fas fa-angle-right"></i>
+                  <i class="fab fa-github"></i>
+                </div>
+              </a>
+              <a
+                class="button"
+                href="https://react-tmdb-application.netlify.app/"
+                target="_blank"
+              >
+                <div class="button__container">
+                  <i class="fas fa-angle-double-right"></i>
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+              </a>
+            </div>
+
+            <!-- Accordion more info -->
+            <!-- <button class="projects__project__accordion">
+              <span class="projects__project__accordion__text">more info</span
+              ><i class="fas fa-angle-down"></i>
+            </button>
+            <p class="projects__project__panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              quisquam distinctio, consectetur impedit quas itaque dolores quod
+              sint suscipit sapiente blanditiis eveniet debitis inventore iste
+              animi natus voluptatibus id sit ipsa obcaecati quibusdam error in
+              dignissimos numquam! Tenetur expedita ad minus culpa eveniet
+              repudiandae, labore nobis fuga illo alias, id non harum qui? Esse
+              velit delectus perferendis, consequatur a sit quod exercitationem
+              quos blanditiis cupiditate earum, nisi molestiae nostrum iusto
+              sed, voluptatem numquam eligendi at quam qui! Totam veritatis ea
+              dolore modi ut fugiat accusamus, iusto voluptates asperiores
+              quisquam libero debitis itaque voluptatem alias est necessitatibus
+              adipisci? Illo veritatis in odit modi hic itaque. Ipsam quia fugit
+              laborum, doloribus deleniti provident nobis, officia eligendi
+              repellat id quo ab laboriosam rem at, culpa magni voluptatum ipsa
+              molestiae? Sapiente maxime repellat quos quod ut non incidunt, rem
+              totam ab! Repellendus dicta doloribus perferendis in numquam
+              praesentium. Voluptatem nihil fugit quibusdam in quam!
+            </p> -->
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <a
+            href="https://zois-yoga.netlify.app/"
+            target="_blank"
+            class="projects__project__img"
+          >
+            <img
+              src="https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5e4ed1030d9a99693f5886c9/screenshot.png"
+              alt=""
+              class="projects__project__img"
+            />
+          </a>
+          <div class="projects__project__info">
+            <h4>Zois Yoga website</h4>
+            <p>
+              Berlin based yoga teacher and photographer Zois Theodorou wanted
+              an elegant website, showcasing his yoga teaching and photography
+              work where people can get in touch easily for booking of
+              (private) lessons or simply more information. With some initial
+              ideas and sketches we found an elegant design with suitable and
+              warm colours. The Bootstrap framework was used for easy layouts
+              and responsiveness of the website.
+            </p>
+            <ul class="projects__project__info__code">
+              <li>HTML</li>
+              <li>Bootstrap/CSS</li>
+              <li>Figma</li>
+            </ul>
+            <div class="projects__project__info__buttons">
+              <a
+                class="button"
+                href="https://github.com/metafuni/zois-yoga"
+                target="_blank"
+              >
+                <div class="button__container">
+                  <i class="fas fa-angle-right"></i>
+                  <i class="fab fa-github"></i>
+                </div>
+              </a>
+              <a
+                class="button"
+                href="https://zois-yoga.netlify.app/"
+                target="_blank"
+              >
+                <div class="button__container">
+                  <i class="fas fa-angle-double-right"></i>
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+              </a>
+            </div>
+
+            <!-- Accordion more info -->
+            <!-- <button class="projects__project__accordion">
+              <span class="projects__project__accordion__text">more info</span
+              ><i class="fas fa-angle-down"></i>
+            </button>
+            <p class="projects__project__panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              quisquam distinctio, consectetur impedit quas itaque dolores quod
+              sint suscipit sapiente blanditiis eveniet debitis inventore iste
+              animi natus voluptatibus id sit ipsa obcaecati quibusdam error in
+              dignissimos numquam! Tenetur expedita ad minus culpa eveniet
+              repudiandae, labore nobis fuga illo alias, id non harum qui? Esse
+              velit delectus perferendis, consequatur a sit quod exercitationem
+              quos blanditiis cupiditate earum, nisi molestiae nostrum iusto
+              sed, voluptatem numquam eligendi at quam qui! Totam veritatis ea
+              dolore modi ut fugiat accusamus, iusto voluptates asperiores
+              quisquam libero debitis itaque voluptatem alias est necessitatibus
+              adipisci? Illo veritatis in odit modi hic itaque. Ipsam quia fugit
+              laborum, doloribus deleniti provident nobis, officia eligendi
+              repellat id quo ab laboriosam rem at, culpa magni voluptatum ipsa
+              molestiae? Sapiente maxime repellat quos quod ut non incidunt, rem
+              totam ab! Repellendus dicta doloribus perferendis in numquam
+              praesentium. Voluptatem nihil fugit quibusdam in quam!
+            </p> -->
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <a
+            href="https://office-task-planner.netlify.app/"
+            target="_blank"
+            class="projects__project__img"
+          >
+            <img
+              src="https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5efb383d74ea0a112200e106/screenshot.png"
+              alt=""
+            />
+          </a>
+          <div class="projects__project__info">
+            <h4>Task Planner Progressive Web App</h4>
+            <p>
+              A 9-to-5 task planner for your everyday office tasks, including
+              timer functionality to remind you of your to do list. The React
+              application is a PWA so it can be installed on your desktop, or as
+              an app on your mobile phone home screen with supported offline use.
+            </p>
+            <ul class="projects__project__info__code">
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>SCSS</li>
+              <li>PWA</li>
+            </ul>
+            <div class="projects__project__info__buttons">
+              <a
+                class="button"
+                href="https://github.com/metafuni/react_task-planner"
+                target="_blank"
+              >
+                <div class="button__container">
+                  <i class="fas fa-angle-right"></i>
+                  <i class="fab fa-github"></i>
+                </div>
+              </a>
+              <a
+                class="button"
+                href="https://react-task-planner.netlify.app/"
+                target="_blank"
+              >
+                <div class="button__container">
+                  <i class="fas fa-angle-double-right"></i>
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+              </a>
+            </div>
+
+            <!-- Accordion more info -->
+            <!-- <button class="projects__project__accordion">
+              <span class="projects__project__accordion__text">more info</span
+              ><i class="fas fa-angle-down"></i>
+            </button>
+            <p class="projects__project__panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              quisquam distinctio, consectetur impedit quas itaque dolores quod
+              sint suscipit sapiente blanditiis eveniet debitis inventore iste
+              animi natus voluptatibus id sit ipsa obcaecati quibusdam error in
+              dignissimos numquam! Tenetur expedita ad minus culpa eveniet
+              repudiandae, labore nobis fuga illo alias, id non harum qui? Esse
+              velit delectus perferendis, consequatur a sit quod exercitationem
+              quos blanditiis cupiditate earum, nisi molestiae nostrum iusto
+              sed, voluptatem numquam eligendi at quam qui! Totam veritatis ea
+              dolore modi ut fugiat accusamus, iusto voluptates asperiores
+              quisquam libero debitis itaque voluptatem alias est necessitatibus
+              adipisci? Illo veritatis in odit modi hic itaque. Ipsam quia fugit
+              laborum, doloribus deleniti provident nobis, officia eligendi
+              repellat id quo ab laboriosam rem at, culpa magni voluptatum ipsa
+              molestiae? Sapiente maxime repellat quos quod ut non incidunt, rem
+              totam ab! Repellendus dicta doloribus perferendis in numquam
+              praesentium. Voluptatem nihil fugit quibusdam in quam!
+            </p> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience & CV -->
+      <!-- <section class="experience" id="experience"></section> -->
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <h3>Contact</h3>
+        <p>
+          I am always open to new opportunities and I am more than happy to
+          answer any questions. <br />
+          Feel free to get in touch and drop me a message!
+        </p>
+        <div class="contact__formcontainer">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            action="/confirmation.html"
+            class="contact__formcontainer__form"
+          >
+            <input
+              type="text"
+              id="form_name"
+              name="name"
+              class="contact__formcontainer__form__control"
+              placeholder="name"
+              required
+            />
+            <input
+              type="email"
+              id="form_email"
+              name="email"
+              class="contact__formcontainer__form__control"
+              placeholder="name@email.com"
+              required
+            />
+            <textarea
+              class="contact__formcontainer__form__control"
+              name="message"
+              id="form_message"
+              rows="7"
+              columns="10"
+              placeholder="message"
+              required
+            ></textarea>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit_field"
+              class="contact__formcontainer__form__button button"
+            />
+          </form>
+        </div>
+        <i class="far fa-envelope fa-10x"></i>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer__container">
+        <div class="footer__container__info">
+          <div class="footer__container__info__left">
+            <div class="footer__container__info__left__links">
+              <h5>
+                <img
+                  src="./img/logos/logo.svg"
+                  alt=""
+                  class="footer__container__info__left__img"
+                />
+                Stefano Metafuni
+              </h5>
+              <a href="#main" class="btn btn__footer">home</a>
+              <a href="#about" class="btn btn__footer">about</a>
+              <a href="#projects" class="btn btn__footer">projects</a>
+              <!-- <a href="#experience" class="btn btn__footer">experience</a> -->
+              <a href="#contact" class="btn btn__footer">contact</a>
+            </div>
+            <div class="footer__container__info__left__social">
+              <a
+                href="mailto:metafunistefano@gmail.com"
+                class="btn btn__footer"
+              >
+                <i class="fas fa-envelope fa-2x"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/stefano-metafuni-018336183"
+                class="btn btn__footer"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a
+                href="https://github.com/metafuni"
+                class="btn btn__footer"
+                target="_blank"
+              >
+                <i class="fab fa-github-square fa-2x"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer__container__info__right">
+            <div class="footer__container__info__right__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2204.039979635747!2d-2.958040484070784!3d56.46707228075038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865cf1b0b61f31%3A0x3d5eac529ffe0871!2s3%20Lilybank%20Terrace%2C%20Dundee%20DD4%206BQ!5e0!3m2!1sen!2suk!4v1591542185420!5m2!1sen!2suk"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>&copy; Copyright 2020, Stefano Metafuni. All rights are reserved</p>
+    </footer>
+  </body>
+</html>

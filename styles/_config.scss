@@ -1,0 +1,146 @@
+//Colors
+$blue: #2548a3;
+$faintblue: #4268b7;
+$lightblue: #37b8ef;
+$faintlightblue: #57c8f3;
+$grey: #757575;
+$faintgrey: #919191;
+$white: white;
+$faintwhite: #dadada;
+
+$backgroundblue: #485266;
+$backgroundwhite: #d9d9da;
+$backgroundgrey: #939494;
+
+//Fonts
+$primary-font: "Montserrat", "Arial", sans-serif;
+$button-font: "Poppins", "Arial", sans-serif;
+$paragraph-font: "Poppins", "Arial", sans-serif;
+$third-font: "Ubuntu", "Arial", sans-serif;
+$header-font: "Raleway", "Arial", sans-serif;
+$code-font: "IBM Plex Mono", monospace;
+
+//Text styling
+.link {
+  transition: .3s;
+  color: inherit;
+
+   &:hover {
+      color: $white;
+  }
+}
+
+.white-link {
+  transition: .3s;
+  color: inherit;
+
+  &:hover {
+    color: $backgroundblue;
+  }
+}
+
+.bold {
+  font-weight: 600;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+}
+
+h1 {
+  font-size: 4rem;
+  color: $blue;
+}
+
+h2 {
+  font-size: 3.25rem;
+  color: $grey;
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: $grey;
+}
+
+h4 {
+  font-size: 1.45rem;
+}
+
+p {
+  font-family: $paragraph-font;
+}
+
+//Buttons
+.btn {
+  padding: 0.15rem 1.25rem;
+  text-decoration: none;
+  font-family: $button-font;
+  transition: 0.1s;
+
+  &__nav {
+    color: $grey;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__footer {
+    color: $faintwhite;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.button {
+  border: 2px solid $blue;
+  border-radius: .25rem; 
+  font-family: $button-font;
+  cursor: pointer;
+  width: 7rem;
+  color: $blue;
+  background: $white;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.15rem;
+  margin-top: 1rem;
+  transition: 0.2s;
+  opacity: .95;
+
+  i:nth-child(1) {
+    display: none;
+  }
+
+  &:hover {
+    color: $white;
+    background: $blue;
+
+    i:nth-child(1) {
+      display: inline-block;
+    }
+
+    i:nth-child(1):not(.fa-file-download) {
+      animation: arrows .3s ease forwards;
+    }
+
+    i:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
+//Cards
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 350px;
+}

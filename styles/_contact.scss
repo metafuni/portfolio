@@ -1,0 +1,53 @@
+.contact {
+    position: relative;
+    color: $grey;
+    text-align: center;
+    padding: 7rem 2.5rem 5rem 2.5rem;
+    background: linear-gradient(65deg, $backgroundwhite, #f5f7fb, 50%, $white 50%);
+    box-shadow: 0 -5px 5px -5px #333;
+    
+    .fa-envelope {
+        color: #f5f7fb;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+    }
+
+    h3 {
+        color: $blue;
+        margin-bottom: 1.5rem;
+    }
+
+    &__formcontainer {
+        margin: 1.5rem auto;
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            max-width: 550px;
+            margin: 0 auto;
+
+            > * {
+                margin: .25rem auto;
+                border-radius: .25rem;
+                font-family: $button-font;
+                border: 1px solid $blue;
+                outline: none;
+                background: none;
+                width: 100%;
+            }
+
+            &__control {
+                box-shadow: 1px 1px 5px $faintgrey;
+                padding: .25rem;
+            }
+
+            &__button {
+                border: 2px solid $blue;
+                width: 7rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+}

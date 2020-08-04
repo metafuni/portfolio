@@ -1,0 +1,132 @@
+//loading overlay animation
+@keyframes loading-overlay {
+    from {
+        opacity: 1;
+        display: block;
+    }
+    to {
+        opacity: 0;
+        display: none;
+        pointer-events: none;
+    }
+}
+
+@keyframes loading-overlay-img {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes loading-overlay-blue {
+    0% {
+        left: -50%;
+    }
+    40% {
+        left: -50%;
+    }
+    50% {
+        left: -10%;
+    }
+    80% {
+        left: -10%;
+    }
+    100% {
+        left: -50%;
+    }
+}
+
+@keyframes loading-overlay-lightblue {
+    0% {
+        left: -50%;
+    }
+    40% {
+        left: -50%;
+    }
+    50% {
+        left: -7%;
+    }
+    80% {
+        left: -7%;
+    }
+    100% {
+        left: -50%;
+    }
+}
+
+@keyframes loading-overlay-grey {
+    0% {
+        left: -50%;
+    }
+    40% {
+        left: -50%;
+    }
+    50% {
+        left: -4%;
+    }
+    80% {
+        left: -4%;
+    }
+    100% {
+        left: -50%;
+    }
+}
+
+// navbar links hover animation
+@keyframes navlinks-bottom {
+    from {
+        opacity: 0;
+        left: -100%;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes navlinks-top {
+    from {
+        opacity: 0;
+        right: -100%;
+    }
+    to {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+// navbar hover slide animation
+@keyframes animated-slide {
+    0% {
+        left: 20%;
+        opacity: 0;
+    }
+    50% {
+        left: 30%;
+        opacity: .8;
+    }
+    100% {
+        left: 40%;
+        opacity: 0;
+    }
+}
+
+//buttons animations 
+@keyframes arrows {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

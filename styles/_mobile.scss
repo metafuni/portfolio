@@ -1,0 +1,248 @@
+@media (max-width: 1200px) {
+  .about {
+    .fa-cogs {
+      display: none !important;
+    }
+}
+}
+
+@media (max-width: 1000px) {
+  .contact {
+    .fa-envelope {
+      display: none !important;
+    }
+  }
+
+  .projects {
+    &__intro {
+      flex-direction: column;
+
+      &__screens {
+        width: 100vw !important;
+        padding: 0 !important;
+        margin: 2.5rem 0;
+
+        &__img--desktop {
+          width: 65vw !important;
+          max-width: 350px;
+        }
+
+        &__img--mobile {
+          left: 50% !important;
+          top: 50% !important;
+          transform: translateX(-195%);
+          width: 25vw !important;
+          max-width: 150px;
+        }
+      }
+    }
+    &__project {
+      flex-direction: column !important;
+      justify-content: center;
+      align-items: center;
+
+      &__img {
+        margin-bottom: 2rem;
+      }
+
+      &__info__code, &__info__buttons {
+        justify-content: center !important;
+    }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  //Navbar
+  .navbar {
+    &:hover {
+      height: 70px !important;
+    }
+
+    &:hover .navbar__hovertext {
+      display: none;
+    }
+
+    &:hover .navbar__logo {
+      width: 75px !important;
+    }
+
+    &:hover .navbar__animated {
+      display: none !important;
+    }
+
+    &__burger {
+      display: block !important;
+      z-index: 25;
+      
+      .cross--top {
+        margin-top: 50% !important;
+        transform-origin: center !important;
+        transform: rotate(45deg);
+      }
+
+      .cross--bottom {
+        margin-top: -50% !important;
+        transform-origin: center !important;
+        transform: rotate(-45deg);
+      }
+
+      .invisible {
+        opacity: 0;
+      }
+    }
+
+    .menu--slide {
+      transform: translateX(0);
+    }
+
+    &__menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 1.25rem;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 7rem 0 18rem 0;
+      align-items: center;
+      height: 100vh;
+      width: 300px !important;
+      max-width: 90vw;
+      background: $white;
+      transform: translateX(100%);
+      transition: .3s;
+      box-shadow: 1px 1px 5px $backgroundgrey;
+
+      .button {
+        font-size: 1.25rem !important;
+      }
+
+      &__item {
+        &:first-of-type {
+          display: block !important;
+        }
+
+        .navbar__link {
+          color: $blue !important;
+        }
+      }
+    }
+
+    &__menu:last-child {
+        a {
+            color: $blue;
+        }
+    }
+  }
+
+  //Main 
+  .main {
+    &__container {
+      flex-direction: column;
+      height: auto !important;
+
+      &__titles, &__logo {
+        width: 100vw !important;
+      }
+
+      &__titles {
+        height: 90vh;
+      }
+
+      &__logo {
+        height: 70vh;
+      }
+    }
+  }
+
+  //About 
+  .about {
+    flex-direction: column !important;
+    padding: 0 !important;
+
+    &__info {
+      padding: 0 !important;
+
+      &__personal {
+        flex-direction: column;
+
+        &__profile, &__text {
+          width: 100% !important;
+          padding: 0 !important;
+          margin: 2.5rem auto;
+        }
+      }
+      &__service {
+        flex-direction: column;
+
+        .card {
+          margin-bottom: 3.5rem;
+        }
+      }
+    }
+
+    &__technologies {
+      width: 100vw !important;
+      padding-bottom: 5rem !important;
+    }
+
+    &__techgrid {
+      padding: 2.5rem 0;
+    }
+  }
+
+  //Contact
+  .contact {
+    &__formcontainer {
+        &__form {
+          width: 90% !important;
+        }
+    }
+}
+
+  //Footer
+  .footer {
+    padding: 1.5rem 0 !important;
+
+    &__container{
+      &__info {
+        flex-direction: column !important;
+
+        &__left, &__right {
+          width: 100vw !important;
+        }
+
+        &__left {
+          margin-bottom: 2rem;
+        }
+
+        &__right { 
+          padding: 0 0 !important;
+          text-align: center;
+
+          &__map {
+            width: 80% !important;
+            max-width: 400px;
+            height: 350px !important;
+            margin: 0 auto !important;
+          }
+        }
+      }
+    } 
+  }
+}
+
+@media (max-width: 400px) {
+  //About 
+  .about {
+    &__techgrid {
+      grid-template-columns: repeat(5, 60px) !important;
+    }
+  }
+
+  //Fonts
+  html {
+    font-size: .8rem;
+  }
+}

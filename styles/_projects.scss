@@ -1,0 +1,163 @@
+.projects {
+  background: $white;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  &__intro {
+    display: flex;
+    padding: 4rem 2rem;
+    color: $backgroundwhite;
+    background: $blue;
+
+    h3 {
+      color: $white;
+    }
+
+    &__text {
+      padding: 2rem;
+    }
+
+    &__screens {
+      position: relative;
+      width: 50vw;
+      padding: 2rem;
+      margin-bottom: 3rem;
+
+      &__img--desktop {
+        width: 350px;
+        box-shadow: 1px 1px 2px $backgroundgrey, -1px -1px 2px $backgroundgrey,
+          -1px 1px 2px $backgroundgrey, 1px -1px 2px $backgroundgrey;
+      }
+
+      &__img--mobile {
+        width: 150px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__project {
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+
+      .projects__project__info__code,
+      .projects__project__info__buttons {
+        justify-content: flex-start;
+      }
+    }
+
+    &:last-child {
+        padding: 0 0 7rem 0;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto 0 auto;
+
+    h4 {
+        color: $blue;
+    }
+
+    p {
+        color: $grey;
+    }
+
+    &__img {
+      img {
+        top: 150px;
+        width: 80vw;
+        max-width: 450px;
+        max-height: 300px;
+        border-radius: 1rem;
+        background: $white;
+        transition: .2s;
+        margin: 0 3rem;
+        box-shadow: 1px 1px 10px $grey;
+
+        &:hover {
+          box-shadow: 1px 1px 10px $backgroundblue;
+          filter: blur(1px);
+        }
+      }
+    }
+
+    &__info {
+      padding: 1rem 5rem;
+
+      &__code {
+        color: $lightblue;
+        font-family: $code-font;
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0.5rem auto;
+
+        li {
+          margin: 0 .25rem;
+        }
+      }
+
+      &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin: 1.5rem auto;
+
+        .button {
+          border: 2px solid $blue;
+          color: $blue;
+          background: $white;
+          width: 2.5rem;
+          display: flex;
+          justify-content: center;
+          margin: 0 0.5rem;
+
+          &:hover {
+            color: $white;
+            background: $blue;
+          }
+        }
+      }
+    }
+
+    &__accordion {
+      outline: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: $button-font;
+      color: $blue;
+      transition: 0.3s;
+
+      &:hover {
+        color: $lightblue;
+      }
+
+      i {
+        margin: 0 0.5rem;
+        transition: 0.2s;
+      }
+    }
+
+    .active {
+      i {
+        transform: rotate(-180deg);
+      }
+    }
+
+    &__panel {
+      padding: 1rem 0 0 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+  }
+}
