@@ -102,3 +102,63 @@ gsap.from(".card", {
   duration: .75,
   stagger: .4
 });
+
+// Technologies
+gsap.from(".about__techgrid__item", {
+  scrollTrigger: ".about__techgrid__item",
+  opacity: 0,
+  rotateY: -270,
+  delay: .35,
+  duration: .1,
+  stagger: .025
+});
+
+gsap.from(".about__technologies", {
+  scrollTrigger: ".about__technologies",
+  opacity: 0,
+  y: 50,
+  duration: 1.25
+});
+
+// Projects
+gsap.from(".projects__intro__screens", {
+  scrollTrigger: ".projects__intro__screens",
+  opacity: 0,
+  y: 50,
+  duration: 1.25
+});
+
+gsap.utils.toArray(".projects__project__info").forEach(info => {
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: info,
+      toggleActions: "play none none none",
+      start: "top 95%",
+      markers: false
+    }
+  });
+
+  tl.from(info, {
+    opacity: 0,
+    y: -50,
+    duration: 1.25
+  });
+});
+
+gsap.utils.toArray(".projects__project__img").forEach(img => {
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: img,
+      toggleActions: "play none none none",
+      start: "top 95%",
+      markers: false
+    }
+  });
+
+  tl.from(img, {
+    opacity: 0,
+    y: 50,
+    duration: 1.25
+  });
+});
+
