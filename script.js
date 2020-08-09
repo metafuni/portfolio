@@ -75,6 +75,7 @@ $(document).ready(function(){
 // Lazy Loading images
 const images = document.querySelectorAll("[data-src]");
 const preloadImage = (img) => {
+  console.log('preloading image....');
   const src = img.getAttribute("data-src");
   if (!src) {
     return;
