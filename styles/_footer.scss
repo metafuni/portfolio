@@ -34,8 +34,11 @@
           align-items: center;
           padding: 1rem;
 
-          h5 {
+          span {
+            font-family: $header-font;
             margin-bottom: 2rem;
+            color: $white;
+            font-weight: bold;
 
             img {
               width: 2.5rem;
