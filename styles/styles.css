@@ -412,6 +412,43 @@ label {
   .contact .fa-envelope {
     display: none !important;
   }
+  .about {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    padding: 0 !important;
+  }
+  .about__info {
+    padding: 0 !important;
+  }
+  .about__info__personal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__info__personal__profile, .about__info__personal__text {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 2.5rem auto;
+  }
+  .about__info__service {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__info__service .card {
+    margin-bottom: 3.5rem;
+  }
+  .about__technologies {
+    width: 100vw !important;
+    padding-bottom: 5rem !important;
+  }
+  .about__techgrid {
+    padding: 2.5rem 0;
+  }
   .projects__intro {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -549,43 +586,6 @@ label {
   }
   .main__container__logo {
     height: 70vh;
-  }
-  .about {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    padding: 0 !important;
-  }
-  .about__info {
-    padding: 0 !important;
-  }
-  .about__info__personal {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .about__info__personal__profile, .about__info__personal__text {
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 2.5rem auto;
-  }
-  .about__info__service {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .about__info__service .card {
-    margin-bottom: 3.5rem;
-  }
-  .about__technologies {
-    width: 100vw !important;
-    padding-bottom: 5rem !important;
-  }
-  .about__techgrid {
-    padding: 2.5rem 0;
   }
   .contact__formcontainer__form {
     width: 90% !important;
@@ -1018,9 +1018,9 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

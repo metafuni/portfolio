@@ -13,6 +13,42 @@
     }
   }
 
+  //About 
+  .about {
+    flex-direction: column !important;
+    padding: 0 !important;
+
+    &__info {
+      padding: 0 !important;
+
+      &__personal {
+        flex-direction: column;
+
+        &__profile, &__text {
+          width: 100% !important;
+          padding: 0 !important;
+          margin: 2.5rem auto;
+        }
+      }
+      &__service {
+        flex-direction: column;
+
+        .card {
+          margin-bottom: 3.5rem;
+        }
+      }
+    }
+
+    &__technologies {
+      width: 100vw !important;
+      padding-bottom: 5rem !important;
+    }
+
+    &__techgrid {
+      padding: 2.5rem 0;
+    }
+  }
+
   .projects {
     &__intro {
       flex-direction: column;
@@ -153,42 +189,6 @@
       &__logo {
         height: 70vh;
       }
-    }
-  }
-
-  //About 
-  .about {
-    flex-direction: column !important;
-    padding: 0 !important;
-
-    &__info {
-      padding: 0 !important;
-
-      &__personal {
-        flex-direction: column;
-
-        &__profile, &__text {
-          width: 100% !important;
-          padding: 0 !important;
-          margin: 2.5rem auto;
-        }
-      }
-      &__service {
-        flex-direction: column;
-
-        .card {
-          margin-bottom: 3.5rem;
-        }
-      }
-    }
-
-    &__technologies {
-      width: 100vw !important;
-      padding-bottom: 5rem !important;
-    }
-
-    &__techgrid {
-      padding: 2.5rem 0;
     }
   }
 
