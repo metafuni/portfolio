@@ -41,9 +41,7 @@
       <div class="loading__overlay__item grey"></div>
       <div class="loading__overlay__img">
         <img src="./img/logos/logo.svg" alt="" />
-        <h3>
-          Stefano Metafuni
-        </h3>
+        <h3>Stefano Metafuni</h3>
       </div>
     </span>
 
@@ -89,7 +87,11 @@
           <a class="navbar__link" href="#contact">contact</a>
         </li>
         <li class="navbar__menu__item">
-          <a class="btn btn__nav button" href="/Stefano Metafuni CV - October 2020.pdf" target="_blank">
+          <a
+            class="btn btn__nav button"
+            href="/Stefano Metafuni CV - October 2020.pdf"
+            target="_blank"
+          >
             <i class="fas fa-file-download"></i>
             <i class="fas fa-file"></i>
             cv
@@ -571,6 +573,97 @@
 
         <div class="projects__project">
           <a
+            href="https://chefmetafuni.com"
+            target="_blank"
+            class="projects__project__img"
+          >
+            <img data-src="./img/chefmetafuni-website-screenshot.webp" alt="" />
+          </a>
+          <div class="projects__project__info">
+            <h4>Chef Metafuni Jamstack Website</h4>
+            <p>
+              A personal website including a blog, pictures gallery and recipes
+              from the Instagram channel
+              <a
+                href="https://www.instagram.com/stefano_metafuni_chef/"
+                target="_blank"
+                class="white-link"
+                >@stefano_metafuni_chef</a
+              >.<br></br> The website is built on a <a href="https://jamstack.org/" target="_blank" class="white-link">Jamstack</a>
+               using <i>Gatsby</i>, as a static
+              site generator that works on the JavaScript framework React, the
+              <a
+                href="https://www.contentful.com/"
+                target="_blank"
+                class="white-link"
+              >
+                Contentful CMS</a
+              >
+              as a back-end to provide and update content and <i>GraphQL</i> to query
+              the data from the headless CMS. The benefits for using this stack are simply to have a:
+                a fast <i>single-page application</i> (SPA), 
+                better overall <i>performance</i>, 
+                optimized images and content for better <i>loading speed</i> and
+                integration with a <i>headless CMS</i> as back-end for easy and convenient content delivery</i>.              
+            </p>
+            <ul class="projects__project__info__code">
+              <li>Gatsby</li>
+              <li>GraphQL</li>
+              <li>Bootstrap</li>
+              <li>ContentfulCMS</li>
+            </ul>
+            <div class="projects__project__info__buttons">
+              <a
+                class="button"
+                href="https://github.com/metafuni/metafunichef"
+                target="_blank"
+              >
+                <div class="button__container">
+                  <i class="fas fa-angle-right"></i>
+                  <i class="fab fa-github"></i>
+                </div>
+              </a>
+              <a
+                class="button"
+                href="https://chefmetafuni.com/"
+                target="_blank"
+              >
+                <div class="button__container">
+                  <i class="fas fa-angle-double-right"></i>
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+              </a>
+            </div>
+
+            <!-- Accordion more info -->
+            <!-- <button class="projects__project__accordion">
+              <span class="projects__project__accordion__text">more info</span
+              ><i class="fas fa-angle-down"></i>
+            </button>
+            <p class="projects__project__panel">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              quisquam distinctio, consectetur impedit quas itaque dolores quod
+              sint suscipit sapiente blanditiis eveniet debitis inventore iste
+              animi natus voluptatibus id sit ipsa obcaecati quibusdam error in
+              dignissimos numquam! Tenetur expedita ad minus culpa eveniet
+              repudiandae, labore nobis fuga illo alias, id non harum qui? Esse
+              velit delectus perferendis, consequatur a sit quod exercitationem
+              quos blanditiis cupiditate earum, nisi molestiae nostrum iusto
+              sed, voluptatem numquam eligendi at quam qui! Totam veritatis ea
+              dolore modi ut fugiat accusamus, iusto voluptates asperiores
+              quisquam libero debitis itaque voluptatem alias est necessitatibus
+              adipisci? Illo veritatis in odit modi hic itaque. Ipsam quia fugit
+              laborum, doloribus deleniti provident nobis, officia eligendi
+              repellat id quo ab laboriosam rem at, culpa magni voluptatum ipsa
+              molestiae? Sapiente maxime repellat quos quod ut non incidunt, rem
+              totam ab! Repellendus dicta doloribus perferendis in numquam
+              praesentium. Voluptatem nihil fugit quibusdam in quam!
+            </p> -->
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <a
             href="https://react-tmdb-application.netlify.app/"
             target="_blank"
             class="projects__project__img"
@@ -751,9 +844,9 @@
             <p>
               A 9-to-5 task planner for your everyday office tasks, including
               timer functionality to remind you of your to do list. The React
-              application is a PWA (Progressive Web App) so it can be installed on your desktop, or as
-              an app on your mobile phone home screen with supported offline
-              use.
+              application is a PWA (Progressive Web App) so it can be installed
+              on your desktop, or as an app on your mobile phone home screen
+              with supported offline use.
             </p>
             <ul class="projects__project__info__code">
               <li>React</li>
@@ -923,7 +1016,7 @@
                 width="100%"
                 height="100%"
                 frameborder="0"
-                style="border: 0;"
+                style="border: 0"
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
