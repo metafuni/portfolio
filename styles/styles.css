@@ -979,8 +979,6 @@ label {
   border-radius: 30%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
 }
 
 .about__info__personal__profile__linkedin:hover {
